@@ -1,0 +1,3 @@
+[submodule "third_party/meta-ti"]
+	path = third_party/meta-ti
+	url = git://git.yoctoproject.org/meta-ti
