@@ -1,0 +1,13 @@
+# Binaries
+*.out
+*.exe
+*.o
+
+# CMake
+build/
+
+# Third Party
+third_party/*/
+
+#Mac
+.DS_Store
