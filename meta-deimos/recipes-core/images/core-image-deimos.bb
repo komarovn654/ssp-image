@@ -17,6 +17,11 @@ IMAGE_INSTALL:append = " nfs-utils nfs-utils-client"
 IMAGE_INSTALL:append = " wayland wayland-protocols wayland-utils"
 IMAGE_INSTALL:append = " mesa"
 IMAGE_INSTALL:append = " libegl-mesa libgles2-mesa"
-IMAGE_INSTALL:append = " weston weston-init weston-drm libinput"
-VIRTUAL-RUNTIME_init_manager = "systemd"
+IMAGE_INSTALL:append = " weston weston-init weston-examples"
 IMAGE_INSTALL:append = " python3"
+IMAGE_INSTALL:append = " libinput"
+
+IMAGE_INSTALL:append = " kernel-module-evdev"
+IMAGE_INSTALL:append = " kernel-module-g-ether"
+
+VIRTUAL-RUNTIME_init_manager = "systemd"

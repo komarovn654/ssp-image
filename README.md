@@ -57,3 +57,11 @@ setenv nfsboot 'tftp 0x81000000 zImage; tftp 0x82000000 am335x-boneblack-beagleb
 saveenv
 run nfsboot
 ```
+
+## EoU
+BBB
+```sh
+modprobe g-ether
+ifconfig usb0 192.168.7.2 netmask 255.255.255.0
+```
+
