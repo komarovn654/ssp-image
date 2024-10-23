@@ -14,6 +14,8 @@ bitbake-layers show-layers
 ## Show recipes:
 ```sh
 bitbake-layers show-recipes
+
+bitbake virtual/kernel -c menuconfig
 ```
 ## Git patches. Example of TI u-boot modification:
 From the build directory run:
@@ -65,3 +67,6 @@ modprobe g-ether
 ifconfig usb0 192.168.7.2 netmask 255.255.255.0
 ```
 
+
+
+u-boot-ti-staging_2023.04.bbappend

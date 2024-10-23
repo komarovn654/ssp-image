@@ -1,27 +1,26 @@
 SUMMARY = "A small image just capable of allowing a device to boot."
 
-IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
-
-IMAGE_LINGUAS = " "
+IMAGE_FEATURES += "ssh-server-dropbear nfs-client weston"
 
 LICENSE = "MIT"
 
+REQUIRED_VERSION_weston = "9.0.0"
+
 inherit core-image
 
+
+
 IMAGE_ROOTFS_SIZE ?= "8192"
-IMAGE_ROOTFS_EXTRA_SPACE:append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "", d)}"
 
-CORE_IMAGE_BASE_INSTALL += "${@bb.utils.contains('DISTRO_FEATURES', 'x11', 'weston-xwayland matchbox-terminal', '', d)}"
-
-IMAGE_INSTALL:append = " nfs-utils nfs-utils-client"
-IMAGE_INSTALL:append = " wayland wayland-protocols wayland-utils"
+IMAGE_INSTALL:append = " wayland wayland-protocols"
 IMAGE_INSTALL:append = " mesa"
 IMAGE_INSTALL:append = " libegl-mesa libgles2-mesa"
-IMAGE_INSTALL:append = " weston weston-init weston-examples"
 IMAGE_INSTALL:append = " python3"
 IMAGE_INSTALL:append = " libinput"
 
 IMAGE_INSTALL:append = " kernel-module-evdev"
-IMAGE_INSTALL:append = " kernel-module-g-ether"
+IMAGE_INSTALL:append = " u-boot-tools u-boot-env-config"
+# IMAGE_INSTALL:append = " kernel-module-g-ether"
+# IMAGE_INSTALL:append = " kernel-module-cpsw"
 
 VIRTUAL-RUNTIME_init_manager = "systemd"
