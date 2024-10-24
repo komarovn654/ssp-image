@@ -21,6 +21,7 @@ bitbake virtual/kernel -c menuconfig
 From the build directory run:
 ```sh
 devtool modify u-boot-ti-staging
+devtool update-recipe -a <layerpath> <recipename>
 ```
 > Note: Dir workspace will be created and added to the bblayers. Also, repo u-boot-ti-staging will be cloned.
 

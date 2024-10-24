@@ -19,7 +19,7 @@ IMAGE_INSTALL:append = " python3"
 IMAGE_INSTALL:append = " libinput"
 
 IMAGE_INSTALL:append = " kernel-module-evdev"
-IMAGE_INSTALL:append = " u-boot-tools u-boot-env-config"
+IMAGE_INSTALL:append = " u-boot-tools u-boot-env-config libubootenv-bin"
 # IMAGE_INSTALL:append = " kernel-module-g-ether"
 # IMAGE_INSTALL:append = " kernel-module-cpsw"
 
