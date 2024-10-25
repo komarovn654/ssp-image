@@ -4,11 +4,7 @@ IMAGE_FEATURES += "ssh-server-dropbear nfs-client weston"
 
 LICENSE = "MIT"
 
-REQUIRED_VERSION_weston = "9.0.0"
-
 inherit core-image
-
-
 
 IMAGE_ROOTFS_SIZE ?= "8192"
 
