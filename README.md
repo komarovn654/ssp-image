@@ -67,7 +67,3 @@ BBB
 modprobe g-ether
 ifconfig usb0 192.168.7.2 netmask 255.255.255.0
 ```
-
-
-
-u-boot-ti-staging_2023.04.bbappend

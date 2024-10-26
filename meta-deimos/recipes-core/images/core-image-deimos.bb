@@ -18,5 +18,3 @@ IMAGE_INSTALL:append = " kernel-module-evdev"
 IMAGE_INSTALL:append = " u-boot-tools u-boot-env-config libubootenv-bin"
 # IMAGE_INSTALL:append = " kernel-module-g-ether"
 # IMAGE_INSTALL:append = " kernel-module-cpsw"
-
-VIRTUAL-RUNTIME_init_manager = "systemd"
