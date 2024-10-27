@@ -67,3 +67,6 @@ BBB
 modprobe g-ether
 ifconfig usb0 192.168.7.2 netmask 255.255.255.0
 ```
+```sh
+oe-pkgdata-util list-pkg-files wayland
+```
