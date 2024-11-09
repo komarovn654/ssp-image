@@ -1,12 +1,12 @@
-[submodule "third_party/meta-ti"]
-	path = third_party/meta-ti
+[submodule "meta-ti"]
+	path = meta-ti
 	url = git://git.yoctoproject.org/meta-ti
-[submodule "third_party/bitbake"]
-	path = third_party/bitbake
+[submodule "bitbake"]
+	path = bitbake
 	url = https://github.com/openembedded/bitbake.git
-[submodule "third_party/openembedded-core"]
-	path = third_party/openembedded-core
+[submodule "openembedded-core"]
+	path = openembedded-core
 	url = git://git.openembedded.org/openembedded-core
-[submodule "third_party/meta-arm"]
-	path = third_party/meta-arm
+[submodule "meta-arm"]
+	path = meta-arm
 	url = https://git.yoctoproject.org/meta-arm/
