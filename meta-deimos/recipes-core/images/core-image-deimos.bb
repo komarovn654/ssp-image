@@ -8,7 +8,7 @@ inherit core-image
 
 IMAGE_ROOTFS_SIZE ?= "8192"
 
-IMAGE_INSTALL:append = " wayland wayland-protocols wayland-tools libxkbcommon"
+IMAGE_INSTALL:append = " wayland wayland-protocols wayland-dev wayland-tools libxkbcommon"
 IMAGE_INSTALL:append = " mesa"
 IMAGE_INSTALL:append = " libegl-mesa libgles2-mesa"
 IMAGE_INSTALL:append = " python3"
