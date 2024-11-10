@@ -3,9 +3,9 @@ BBFILES ?= ""
 
 BBLAYERS ?= " \
   ##OEROOT##/meta-deimos \
-  ##OEROOT##/third_party/openembedded-core/meta \
-  ##OEROOT##/third_party/meta-arm/meta-arm \
-  ##OEROOT##/third_party/meta-arm/meta-arm-toolchain \
-  ##OEROOT##/third_party/meta-ti/meta-ti-bsp \
+  ##OEROOT##/openembedded-core/meta \
+  ##OEROOT##/meta-arm/meta-arm \
+  ##OEROOT##/meta-arm/meta-arm-toolchain \
+  ##OEROOT##/meta-ti/meta-ti-bsp \
   ##OEROOT##/meta-apps \
   "
