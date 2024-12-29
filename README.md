@@ -72,3 +72,9 @@ oe-pkgdata-util list-pkg-files wayland
 ```
 
 bitbake-layers create-layer meta-apps
+
+
+## FOR META-TI
+ti-sgx-ddk-km_1.17 - SRCREV = "652ae16657cc4acda664e669d0c9b4891252f37f"
+mesa-pvr_22.3.5 - SRCREV = "c9f0919367589b38f5682183846de9d60eec082d"
+ti-sgx-ddk-um_1.17 - SRCREV = "84a396a4fb379f10931421e489ac8a199d6a9f2c"
