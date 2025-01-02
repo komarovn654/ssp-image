@@ -7,5 +7,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-arm/meta-arm \
   ##OEROOT##/meta-arm/meta-arm-toolchain \
   ##OEROOT##/meta-ti/meta-ti-bsp \
+  ##OEROOT##/meta-st-stm32mp \
+  ##OEROOT##/meta-frameboard \
   ##OEROOT##/meta-apps \
   "
